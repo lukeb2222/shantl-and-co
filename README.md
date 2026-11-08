@@ -20,10 +20,11 @@ All copy, prices, reviews and photos come from the shop's current website, barbe
 
 ## Structure
 ```
-index.html   page markup
-styles.css   styles & animations
-script.js    interactions (no dependencies)
-images/      site, services, press and gallery photos
+index.html    page markup
+styles.css    styles & animations
+script.js     interactions (no dependencies)
+netlify.toml  Netlify config (publish root, image caching)
+images/       site, services, press and gallery photos
 ```
 
 ## Run locally
@@ -33,5 +34,5 @@ Open `index.html` in a browser, or start a local server:
 python3 -m http.server 8000
 ```
 
-## Deploy
-Turn on GitHub Pages (Settings → Pages → Deploy from branch → `main` / root). The site is plain static HTML, so no build step is needed.
+## Deploy (Netlify)
+In Netlify, choose **Add new site → Import an existing project → GitHub → `shantl-and-co`**. `netlify.toml` already sets the publish directory to the repo root, with no build command, so you can accept the defaults and click **Deploy**. Every push to `main` redeploys the site.
