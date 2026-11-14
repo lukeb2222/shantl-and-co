@@ -642,6 +642,9 @@ body.is-loaded .hero__scroll { opacity: 1; }
 .footer__social a { width: 44px; height: 44px; border: 1px solid rgba(244,237,225,.2); border-radius: 50%; display: grid; place-items: center; transition: all .4s var(--ease); }
 .footer__social a:hover { background: var(--gold); border-color: var(--gold); color: var(--ink); transform: translateY(-3px); }
 .footer__copy { grid-column: 1 / -1; text-align: center; font-size: .75rem; color: var(--muted); padding-top: 2rem; border-top: 1px solid rgba(244,237,225,.08); }
+.footer__sep { margin: 0 .5rem; }
+.footer__credit { color: var(--cream-2); border-bottom: 1px solid rgba(201,164,106,.4); padding-bottom: 1px; transition: color .3s, border-color .3s; }
+.footer__credit:hover { color: var(--gold); border-color: var(--gold); }
 
 /* ---------- Floating mobile CTA ---------- */
 .float-book {
@@ -705,6 +708,9 @@ body.is-loaded .hero__scroll { opacity: 1; }
   .footer { grid-template-columns: 1fr; text-align: center; justify-items: center; }
   .footer__brand { flex-direction: column; }
   .float-book { display: block; }
+  .footer { padding-bottom: 6rem; }
+  .footer__sep { display: none; }
+  .footer__credit { display: table; margin: .5rem auto 0; }
 }
 @media (max-width: 640px) {
   .hero { align-items: flex-end; padding-bottom: 9rem; }
